@@ -1,0 +1,4 @@
+#!/bin/bash
+(cd /home/pi/Desktop; /home/pi/Desktop/aruco_test &)
+(cd /home/pi/Desktop; python /home/pi/Desktop/myGui.py &)
+(cd /home/pi/Desktop; python /home/pi/Desktop/image.py &)

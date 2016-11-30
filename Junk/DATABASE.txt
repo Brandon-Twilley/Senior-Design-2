@@ -1,0 +1,1 @@
+{"object": [{"template_file": "1.jpg", "screen_file": "SCREEN1.jpg", "sign_number": 1}, {"template_file": "2.jpg", "screen_file": "SCREEN2.jpg", "sign_number": 2}, {"template_file": "3.jpg", "screen_file": "SCREEN3.jpg", "sign_number": 3}, {"template_file": "4.jpg", "screen_file": "SCREEN4.jpg", "sign_number": 4}]}

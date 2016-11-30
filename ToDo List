@@ -1,0 +1,21 @@
+Stuff must be done before Tuesday:
+
+2)Block ARUCO file write to 1 per location
+
+	to do this write file only if distance is < 3 
+	then set a flag/variable and if variable is true 
+	skip this function 
+
+3)Get case done.
+
+************* SOLUTION NEEDS TESTED *******************
+7)Set up pi to run our app on startup?
+
+	raspberrypi.org/documentation/linux/usage/re-local.md
+
+***********************************************************************
+
+************GUI and MAIN done**************************************
+8)After all tested running on pi, 
+	clean up code (remove our constant printing statements)
+*******************************************************************
