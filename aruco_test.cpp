@@ -146,62 +146,7 @@ int main(int, char**)
         cap.read(cameraFrame);
 
         if(DETECT){
-            for (unsigned int i = 0; i<Markers.size(); i++) {
-                if (calculateLimits){
-                    for (unsigned int j = 0; j < 3; j++){
-                        float tempPointT = Markers[i].Tvec.ptr< float >(0)[j];
-                        float tempPointR = Markers[i].Rvec.ptr< float >(0)[j];
-
-                        if (j == 0){
-                            if (tempPointT < Txmin){
-                                Txmin = tempPointT;
-                            }
-                            else if (tempPointT > Txmax){
-                                Txmax = tempPointT;
-                            }
-
-                            if (tempPointR < Rxmin){
-                                Rxmin = tempPointR;
-                            }
-                            else if (tempPointR > Rxmax){
-                                Rxmax = tempPointR;
-                            }
-
-                        }
-                        else if (j == 1){
-                            if (tempPointT < Tymin){
-                                Tymin = tempPointT;
-                            }
-                            else if (tempPointT > Tymax){
-                                Tymax = tempPointT;
-                            }
-
-                            if (tempPointR < Rymin){
-                                Rymin = tempPointR;
-                            }
-                            else if (tempPointR > Rymax){
-                                Rymax = tempPointR;
-                            }
-                        }
-                        else if (j == 2){
-                            if (tempPointT < Tzmin){
-                                Tzmin = tempPointT;
-                            }
-                            else if (tempPointT > Tzmax){
-                                Tzmax = tempPointT;
-                                sign_dist = Tzmax;
-                            }
-
-                            if (tempPointR < Rzmin){
-                                Rzmin = tempPointR;
-                            }
-                            else if (tempPointR > Rzmax){
-                                Rzmax = tempPointR;
-                            }
-                        }
-
-                    }
-                }
+            for (unsigned int i = 0; i<Markers.size(); i++){
 
                 //do it for multiple images
 
