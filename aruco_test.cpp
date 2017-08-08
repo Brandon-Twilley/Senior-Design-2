@@ -57,27 +57,6 @@ float calcDist(float pixHeight){
     return distance;
 }
 
-
-
-
-
-static std::vector<int> getJSON(vector<Marker> markers){
-	int length = markers.size();
-
-	//make sure the there is a detected marker
-    std::vector<int> markerIDs;
-
-	for (int i = 0; i < length; i++){
-
-
-        markerIDs.push_back(markers[i].id);
-
-	}
-
-
-	return markerIDs;
-}
-
 void write_file(int id, float dist){
     std::ofstream file;
     std::ostringstream sstream;
